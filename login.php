@@ -11,12 +11,12 @@
     <div class="container">
         <h1 class="title">DOMAIN SELLER</h1>
         <p class="sub">We provide all doimains at cheap price</p>
-        <form class="formWrapper">
+        <form class="formWrapper" method="POST" action="database.php">
         <h3>LOGIN TO CONTINUE</h3>
             <label class="label">USERNAME</label>
-            <input type="text" class="text" /><br>
+            <input type="text" name="username" class="text" /><br>
             <label class="label">PASSWORD</label>
-            <input type="password" class="text" /><br> 
+            <input type="password" name="password" class="text" /><br> 
             <div class="btnWrapper">
             <button class="btn">LOGIN</button>
         
@@ -24,8 +24,5 @@
             </div>
         </form>
     </div>
-    <?php
-    include('database.php')
-    ?>
 </body>
 </html>
