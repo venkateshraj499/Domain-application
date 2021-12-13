@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sub {
+  color: grey;
+}
+.formWrapper {
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aqua;
+  padding: 50px;
+  border-radius: 24px;
+  box-shadow: -2px -2px 16px 0px rgba(0, 0, 0, 0.75);
+  margin-top: 30px;
+}
+.label {
+  padding: 25px;
+  text-align: left;
+}
+.text {
+  margin: 25px;
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+}
+h3 {
+  text-align: center;
+}
+.btnWrapper {
+  text-align: center;
+}
+.btn {
+  height: 35px;
+  width: 90%;
+  margin: 15px;
+  background-color: #3f51b5;
+  font-size: 15px;
+  cursor: pointer;
+}
+.new {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 25px;
+}
