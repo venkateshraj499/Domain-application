@@ -20,7 +20,7 @@
             <div class="btnWrapper">
             <button class="btn">LOGIN</button>
         
-            <a class="new">Don't have an account, Create one </a>
+            <a class="new" href="newAccount.php">Don't have an account, Create one </a>
             </div>
         </form>
     </div>
