@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "Pass#123";
-$db="domain_app";
+$servername = "sql6.freemysqlhosting.net";
+$username = "sql6462912";
+$password = "gPduSIJu5R";
+$db="sql6462912";
 
 // Create connection
  $conn = new mysqli($servername, $username, $password,$db);
@@ -17,9 +17,10 @@ $db="domain_app";
     echo "Invalid username and password" ;
   }
   else{
-    echo "Welcome ".$uname."!";
+    $row = mysqli_fetch_row($result);
+    if($row["password"==$password]){
+        header("Location:newAccount.php");}
   }
-
   $conn->close();
 
 // Check connection
