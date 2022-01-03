@@ -43,11 +43,13 @@ $db="sql6462912";
   </script>';
 
   if($cf){
-    session_start();
+    header("Location:report.php");
+    /*session_start();
     $sql="insert into domain values ('".$_SESSION['username']."','".$dname."','".$price."','".$date."')";
     if($conn->query($sql)==true){
         echo '<script>alert("Purchase Success!")</script>';
-    } 
+        header("Location:report.php");
+    } */
   }
   else{
     header("Location:index.php");
