@@ -30,7 +30,7 @@
                 </ul>
                 <form class="form" method="POST" action="dbdomain.php">
                   <label class="search">Search your domains here...</label><br>
-                  <input type="text" class="input" placeholder="mobilestore.com"/>
+                  <input type="text" class="input" name="domain" placeholder="mobilestore.com"/>
                   <button type="submit" class="button">Search</button>
                 </form>
             </div>
