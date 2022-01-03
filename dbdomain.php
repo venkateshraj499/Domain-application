@@ -28,9 +28,22 @@ $db="sql6462912";
     $price=499;
   else
     $price=399;
-  
-  $cf = confirm("The price for the choosen domain is ".$price.". Click yes to confirm the purchase Y/N");
-  if(cf){
+
+  $cf=false;
+  echo '<script  type="text/JavaScript">
+  {
+    let text = "Press a button!\nEither OK or Cancel.";
+    if (confirm(text) == true) {
+      '.$cf=true.';
+    } else {
+      '.$cf=false.';
+    }
+    document.getElementById("demo").innerHTML = text;
+  }
+  </script>';
+
+  if($cf){
+    session_start();
     $sql="insert into domain values ('".$_SESSION['username']."','".$dname."','".$price."','".$date."')";
     if($conn->query($sql)==true){
         echo '<script>alert("Purchase Success!")</script>';
