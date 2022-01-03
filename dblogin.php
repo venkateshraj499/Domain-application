@@ -23,7 +23,6 @@ $db="sql6462912";
   else{
     $row = mysqli_fetch_row($result);
     if($row["password"==$password]){
-      
       header("Location:index.php");
     }
   }
