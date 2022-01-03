@@ -29,8 +29,8 @@
                     <li class="mainLi">Low prices and huge selection</li>
                 </ul>
                 <form>
-                  <input type="text" />
-                  <button type="submit">Search</button>
+                  <input type="text" class="input"/>
+                  <button type="submit" class="button">Search</button>
                 </form>
             </div>
             <div class="right">
