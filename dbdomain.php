@@ -34,10 +34,9 @@ $db="sql6462912";
   {
     let text = "Price of the choosen domain is \nClick OK to confirm purchase.";
     if (confirm(text) == true) {
-      $cf=true.;
+      '.$cf=true.';
     } else {
-      $cf=false;
-      console.log($cf);
+      '.$cf=false.';
     }
     document.getElementById("demo").innerHTML = text;
   }
