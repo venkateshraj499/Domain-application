@@ -8,7 +8,7 @@
     list-style-type: none;
 }
 .li{
-    font-size: 18px;
+    font-size: 20px;
     color: gray;
     cursor: pointer;
     padding:30px;
@@ -40,4 +40,34 @@ h1{
     padding-top: 15px;
     font-size: 20px;
 }
+.input{
+    width: 500px;
+    height: 40px;
+    margin-top: 15px;
+    padding-left: 25px;
+    font-size: 15px;
+}
+.search{
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+.form{
+    margin-top: 50px;
+}
+.button{
+    height: 40px;
+    width: 100px;
+    padding:10px;
+    font-size: 18px;
+    margin-top: 15px;
+    border: none;
+    background-color: black;
+    color: wheat;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: black;
 
+}
