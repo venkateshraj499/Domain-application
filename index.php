@@ -28,16 +28,10 @@
                     <li class="mainLi">Backed by expert 24/7 support</li>
                     <li class="mainLi">Low prices and huge selection</li>
                 </ul>
-<<<<<<< HEAD
-                <form method="POST" action="dbdomain.php">
-                  <input type="text" name="domain" />
-                  <button type="submit">Search</button>
-=======
                 <form class="form">
                   <label class="search">Search your domains here...</label><br>
                   <input type="text" class="input" placeholder="mobilestore.com"/>
                   <button type="submit" class="button">Search</button>
->>>>>>> 648857ee8b174b65109f0333863be437778713c2
                 </form>
             </div>
             <div class="right">
