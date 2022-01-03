@@ -11,7 +11,7 @@
     <div class="container">
         <h1 class="title">DOMAIN SELLER</h1>
         <p class="sub">We provide all doimains at cheap price</p>
-        <form class="formWrapper" method="POST" action="database.php">
+        <form class="formWrapper" method="POST" action="dblogin.php">
         <h3>LOGIN TO CONTINUE</h3>
             <label class="label">USERNAME</label>
             <input type="text" name="username" class="text" /><br>

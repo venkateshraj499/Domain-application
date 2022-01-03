@@ -34,9 +34,5 @@
             </div>
         </form>
     </div>
-    function validate(){
-        if(get)
-    }
-
 </body>
 </html>
