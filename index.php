@@ -28,6 +28,10 @@
                     <li class="mainLi">Backed by expert 24/7 support</li>
                     <li class="mainLi">Low prices and huge selection</li>
                 </ul>
+                <form>
+                  <input type="text" />
+                  <button type="submit">Search</button>
+                </form>
             </div>
             <div class="right">
                <img src="" alt="no-img" />
