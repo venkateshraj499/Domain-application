@@ -1,0 +1,43 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.li{
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    padding:30px;
+}
+li:hover{
+    color: black;
+}
+.welcome{
+    display: inline-block;
+    padding: 30px;
+    padding-top: 45px;
+    font-size: 20px;
+    margin:0;
+    cursor: default;
+}
+.main{
+    padding: 50px;
+    display: flex;
+    background-color: aquamarine;
+}
+h1{
+   font-size: 50px;
+   max-width: 700px;
+   line-height: 68px;
+}
+.mainLi{
+    list-style-type: "\1F44D";
+    color: gray;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
