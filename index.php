@@ -28,13 +28,14 @@
                     <li class="mainLi">Backed by expert 24/7 support</li>
                     <li class="mainLi">Low prices and huge selection</li>
                 </ul>
-                <form>
-                  <input type="text" class="input"/>
+                <form class="form">
+                  <label class="search">Search your domains here...</label><br>
+                  <input type="text" class="input" placeholder="mobilestore.com"/>
                   <button type="submit" class="button">Search</button>
                 </form>
             </div>
             <div class="right">
-               <img src="" alt="no-img" />
+               <img src="./image.jpg" alt="no-img" width="700px" height="500px"/>
             </div>
         </div>
     </body>
