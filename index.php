@@ -31,7 +31,7 @@
                 <form class="form"  method="POST" action="dbdomain.php">
                   <label class="search">Search your domains here...</label><br>
                   <input type="text" class="input" name="domain" placeholder="mobilestore.com"/>
-                  <button type="submit" class="button" onClick="confirm('do you want to confirm purchase')">Search</button>
+                  <button type="submit" class="button">Search</button>
                 </form>
             </div>
             <div class="right">

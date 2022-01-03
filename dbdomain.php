@@ -17,7 +17,7 @@ $db="sql6462912";
   if(mysqli_num_rows($result) != 0){
     echo '<script>alert("Domain name is already taken")</script>';
   }
-
+  else{
   $exten = substr($dname,strripos($dname,".")+1);
   
   if($exten=='com')
@@ -32,16 +32,17 @@ $db="sql6462912";
   $cf=false;
   echo '<script  type="text/JavaScript">
   {
-    let text = "Press a button!\nEither OK or Cancel.";
+    let text = "Price of the choosen domain is \nClick OK to confirm purchase.";
     if (confirm(text) == true) {
-      '.$cf=true.';
+      $cf=true.;
     } else {
-      '.$cf=false.';
+      $cf=false;
+      console.log($cf);
     }
     document.getElementById("demo").innerHTML = text;
   }
   </script>';
-
+//   let text = "Price of the choosen domain is "'.$price.'"\nClick OK to confirm purchase.";
   if($cf){
     session_start();
     $sql="insert into domain values ('".$_SESSION['username']."','".$dname."','".$price."','".$date."')";
@@ -52,6 +53,7 @@ $db="sql6462912";
   else{
     header("Location:index.php");
   }
+}
   $conn->close();
 
 // Check connection
