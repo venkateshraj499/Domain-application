@@ -28,8 +28,8 @@
                     <li class="mainLi">Backed by expert 24/7 support</li>
                     <li class="mainLi">Low prices and huge selection</li>
                 </ul>
-                <form>
-                  <input type="text" />
+                <form method="POST" action="dbdomain.php">
+                  <input type="text" name="domain" />
                   <button type="submit">Search</button>
                 </form>
             </div>
