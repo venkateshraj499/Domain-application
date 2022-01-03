@@ -47,6 +47,7 @@ $db="sql6462912";
     $sql="insert into domain values ('".$_SESSION['username']."','".$dname."','".$price."','".$date."')";
     if($conn->query($sql)==true){
         echo '<script>alert("Purchase Success!")</script>';
+        header("Location:report.php");
     } 
   }
   else{
