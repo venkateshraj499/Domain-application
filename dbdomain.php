@@ -32,12 +32,10 @@ $db="sql6462912";
   $cf=false;
   echo '<script  type="text/JavaScript">
   {
-    let text = "Price of the choosen domain is \nClick OK to confirm purchase.";
-    if (confirm(text) == true) {
+    let text = "Price of the choosen domain is '.$price.' \nClick OK to confirm purchase.";
+    if (confirm(text)==true) {
       '.$cf=true.';
-    } else {
-      '.$cf=false.';
-    }
+    } 
     document.getElementById("demo").innerHTML = text;
   }
   </script>';
@@ -47,7 +45,8 @@ $db="sql6462912";
     $sql="insert into domain values ('".$_SESSION['username']."','".$dname."','".$price."','".$date."')";
     if($conn->query($sql)==true){
         echo '<script>alert("Purchase Success!")</script>';
-        header("Location:report.php");
+        if($cf==true)
+            header("Location:report.php");
     } 
   }
   else{
