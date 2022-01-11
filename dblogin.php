@@ -1,8 +1,8 @@
 <?php
 $servername = "sql6.freemysqlhosting.net";
-$username = "sql6462912";
-$password = "gPduSIJu5R";
-$db="sql6462912";
+$username = "sql6464728";
+$password = "ERsMIjTP6n";
+$db="sql6464728";
 
 
 
@@ -18,12 +18,15 @@ $db="sql6462912";
   $result=mysqli_query($conn,$sql);
 
   if(mysqli_num_rows($result) == 0){
-    echo "Invalid username and password" ;
+    echo "Invalid username";
   }
   else{
     $row = mysqli_fetch_row($result);
-    if($row["password"==$password]){
+    if($row[0]==$password){
       header("Location:index.php");
+    }
+    else{
+      echo "Invalid password";
     }
   }
   $conn->close();
